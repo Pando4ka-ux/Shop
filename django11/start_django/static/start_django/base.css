@@ -1,0 +1,252 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #68e1ff;
+
+}
+
+#header{
+    background-color: rgb(144, 250, 153);
+    color:rgb(255, 255, 255);
+    padding: 10px, 20px;
+    text-align: center;
+}
+
+.logo{
+    color: rgb(255, 165, 82);
+    text-decoration: none;
+    font-size: 24px;
+}
+#subheader{
+    color: rgb(125, 255, 98);
+    padding: 10px, 20px;
+    text-align: right;
+}
+
+#content{
+    display: flex;
+    margin: 20px;
+}
+
+#sidebar{
+    width: 25%;
+    background-color: rgb(40, 40, 44);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 28px;
+    color: rgb(255, 249, 167);
+}
+
+h2{
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(245, 104, 10);
+}
+
+h3{
+    font-size: 16px;
+    margin-top: 20px;
+    color: rgb(65, 255, 65);
+}
+
+P{
+    font-size: 14px;
+    color: rgb(93, 255, 147);
+}
+
+#sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#sidebar li{
+    margin: 10px 0;
+}
+#sidebar li.selected{
+    font-weight: bold;
+}
+
+/*Основной контент!*/
+#main{
+    width: 75%;
+    padding-left: 20;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.item{
+    background-color: rgb(43, 41, 46);
+    border: 5px solid rgb(255, 0, 0)k;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333%-20px);   
+}
+
+.item ing{
+    max-width: 100%;
+    height: auto;
+}
+
+.product-detail{
+    background-color: rgb(108, 253, 108);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+    width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item ing{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.price{
+    font-size: 24px;
+    color: brown;
+    margin-top: 10px;
+}
+
+.button{
+    background-color: rgb(103, 255, 161);
+    color: aliceblue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(255, 72, 72);
+}
+
+/*Ссылка назад к списку продуквтов*/
+a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.cart{
+    font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart th,.cart td{
+    border: 5px solid rgb(178, 177, 179);
+    padding: 10px;
+    text-align: left;
+}
+
+.cart th{
+    background-color: aqua;
+    color: linen;
+}
+.num{
+    text-align: right;
+}
+.text-right{
+    text-align: right;
+}
+
+.order-info{
+    background-color: rgb(96, 255, 136);
+    border: 5px solid rgb(175, 174, 175);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;  
+}
+.order-info h3{
+    margin-top: 0 px;
+}
+
+.order-info ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.order-info li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px, 0px;
+    border-bottom: 1px solid #fbff00;
+}
+.order-info li:last-child{
+    border-bottom: none;
+}
+.order-info span{
+    font-weight: bold;
+    color: rgb(75, 76, 80);
+}
+
+.order-form{
+    background-color: aliceblue;
+    border: 5px solid rgb(175, 174, 175);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.order-form p{
+    text-align: center;
+}
+.order-form input[type ='submit']{
+    background-color: #ffffff;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    padding: 10px, 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.order-form input[type ='submit']:hover{
+    background-color: #ff0000;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 200%;
+    padding: 10px;
+    border: 1px solid #ccc; /*цвет граней*/
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: right;
+}
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.small {
+    font-size: 12px;
+    color: #a7a7a7;
+}
