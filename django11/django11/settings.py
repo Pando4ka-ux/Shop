@@ -28,7 +28,11 @@ SECRET_KEY = 'django-insecure-av7ct-66#-l9rr1)sm69^6b1#3gy(x1b7#cfblg)pin3^10m&$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'pando4ka-ux.pythonanywhere.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
